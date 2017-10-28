@@ -1,6 +1,6 @@
 # how-to-setup-cluster
 
-# 그림1
+![cluster](./img/1.png)
 
 * 클러스터 환경이 위 그림과 같다고 가정하고 클러스터 세팅을 설명하겠습니다.(Slave의 대수에 따라 맞게 해주시면 되겠습니다.)
 * Master, Slave 모든 서버에서 실행할 명령어는 (모든 서버에서) 수행하시면 됩니다.
@@ -101,7 +101,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu3
 ssh ubuntu3
 ```
 
-# 그림2
+![ssh](./img/2.png)
 
 #### 마. JAVA 설치(모든 서버에서 수행)
 Hadoop이 JVM을 사용하기 때문에 모든 서버에 java SDK를 설치하도록 합니다. 여기서는 현재 최신 버젼인 java 1.8을 설치하겠습니다.
@@ -124,14 +124,14 @@ sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_144/bin/
 sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_144/bin/javac 100
 ```
 
-# 그림 3 alternatives 설명
+![alternatives 설명](./img/3.png)
 
 설치 확인(버젼정보가 보여지면 정상적으로 설치가 잘 된 것입니다.)
 ```
 java –version
 ```
 
-# 그림 4 자바 버전 확인
+![그림 4 자바 버전 확인](./img/4.png)
 
 ## Hadoop 설치
 
@@ -406,7 +406,7 @@ $ stop-dfs.sh
 
 web ui에서 Namenode 1개와 Datanode 3개가 잘 나타나면 정상 (http://ubuntu0:50070)
 
-# 그림5 hadoop cluster 사진
+![그림5 hadoop cluster 사진](./img/5.png)
 
 만약 이상이 있다면 각 서버별로 로그들을 확인
 ```
@@ -428,7 +428,7 @@ hadoop fs -put README.txt /user/hduser
 hadoop fs -ls /user/hduser
 ```
 
-# 사진 6 fs 사진
+![사진 6 fs 사진](./img/6.png)
 
 자. history server 시작
 
@@ -510,7 +510,7 @@ JAVA_HOME=/opt/jdk/jdk1.8.0_144
 
 web ui로 확인 가능 : http://ubuntu0:8080
 
-# 그림 7 Spark cluster
+![림 7 Spark cluster](./img/7.png)
 
 테스트(아래 명령어 수행), 예제가 잘 수행되면 정상적으로 설치 및 설정이 된 것입니다.web ui에서 해당 application들이 수행되는 모습을 모니터링 할 수 있으며, 결과와 로그도 볼 수 있습니다.(Pi의 값을 구하는 예제)
 ```
