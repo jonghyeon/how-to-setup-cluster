@@ -541,5 +541,7 @@ spark.history.provider          org.apache.spark.deploy.history.FsHistoryProvide
 
 # Reference & Acknowledgements
 http://hadoop.apache.org/
+
 http://daeson.tistory.com/277
+
 https://www.tutorialspoint.com/hadoop
