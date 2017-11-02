@@ -542,6 +542,6 @@ spark.history.provider          org.apache.spark.deploy.history.FsHistoryProvide
 # Reference & Acknowledgements
 http://hadoop.apache.org/
 
-http://daeson.tistory.com/277
+http://hadoop.apache.org/docs/r2.7.4/hadoop-project-dist/hadoop-common/ClusterSetup.html
 
-https://www.tutorialspoint.com/hadoop
+http://daeson.tistory.com/277
